@@ -1,0 +1,1 @@
+# samplecrud.auth.netcore6.monggodb
