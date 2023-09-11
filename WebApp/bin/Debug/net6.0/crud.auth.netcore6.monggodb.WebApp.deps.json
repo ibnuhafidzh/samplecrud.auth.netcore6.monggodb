@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "WebApp/1.0.0": {
+      "crud.auth.netcore6.monggodb.WebApp/1.0.0": {
         "dependencies": {
           "AspNetCore.Identity.MongoDbCore": "3.1.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.20",
@@ -15,7 +15,7 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "WebApp.dll": {}
+          "crud.auth.netcore6.monggodb.WebApp.dll": {}
         }
       },
       "AspNetCore.Identity.MongoDbCore/3.1.2": {
@@ -339,7 +339,7 @@
     }
   },
   "libraries": {
-    "WebApp/1.0.0": {
+    "crud.auth.netcore6.monggodb.WebApp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

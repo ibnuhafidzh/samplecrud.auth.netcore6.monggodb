@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RrdHQ8UwO6UJeATTN+ZzGMt52tHCLI87/BL1vNQNNeHyHMTqT05G5rKQIJ0MvY5IGmmKJDM3mVmyJSa+e1ha1w==",
+  "dgSpecHash": "bmkT33fPfeWGTrLjDRBsm2U5+SVkA8Swyn7fm9z63PwUngZNU0kcvIrnm5bE8pSXqAlzaPsqVZXfiekFq7Zo+Q==",
   "success": true,
-  "projectFilePath": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\WebApp.csproj",
+  "projectFilePath": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\crud.auth.netcore6.monggodb.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\aspnetcore.identity.mongodbcore\\3.1.2\\aspnetcore.identity.mongodbcore.3.1.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",

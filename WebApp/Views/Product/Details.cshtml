@@ -1,0 +1,34 @@
+﻿@model WebApp.Models.admin.Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Detail Product</h4>
+                <form class="forms-sample" asp-action="Create">
+                    <div class="form-group row">
+                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Name</label>
+                        <div class="col-sm-9">
+                            <label class="form-control">  @Html.DisplayFor(model => model.Name)</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Address</label>
+                        <div class="col-sm-9">
+                            <label class="form-control">  @Html.DisplayFor(model => model.Address)</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Phone</label>
+                        <div class="col-sm-9">
+                            <label class="form-control">  @Html.DisplayFor(model => model.Phone)</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

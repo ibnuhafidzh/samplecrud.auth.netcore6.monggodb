@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["WebApp/WebApp.csproj", "WebApp/"]
-RUN dotnet restore "WebApp/WebApp.csproj"
+COPY ["WebApp/crud.auth.netcore6.monggodb.WebApp.csproj", "WebApp/"]
+RUN dotnet restore "WebApp/crud.auth.netcore6.monggodb.WebApp.csproj"
 COPY . .
 WORKDIR "/src/WebApp"
-RUN dotnet build "WebApp.csproj" -c Release -o /app/build
+RUN dotnet build "crud.auth.netcore6.monggodb.WebApp.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebApp.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "crud.auth.netcore6.monggodb.WebApp.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "WebApp.dll"]
+ENTRYPOINT ["dotnet", "crud.auth.netcore6.monggodb.WebApp.dll"]

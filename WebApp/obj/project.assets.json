@@ -1819,9 +1819,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\WebApp.csproj",
-      "projectName": "WebApp",
-      "projectPath": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\crud.auth.netcore6.monggodb.WebApp.csproj",
+      "projectName": "crud.auth.netcore6.monggodb.WebApp",
+      "projectPath": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\crud.auth.netcore6.monggodb.WebApp.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
       "outputPath": "D:\\freelance\\github\\crud.auth.netcore6.monggodb\\WebApp\\obj\\",
       "projectStyle": "PackageReference",

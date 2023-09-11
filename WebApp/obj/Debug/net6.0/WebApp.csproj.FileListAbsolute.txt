@@ -54,3 +54,4 @@ D:\freelance\github\crud.auth.netcore6.monggodb\WebApp\obj\Debug\net6.0\WebApp.p
 D:\freelance\github\crud.auth.netcore6.monggodb\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
 D:\freelance\github\crud.auth.netcore6.monggodb\WebApp\obj\Debug\net6.0\ref\WebApp.dll
 D:\freelance\github\crud.auth.netcore6.monggodb\WebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
+D:\freelance\github\crud.auth.netcore6.monggodb\WebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutChild.cshtml.rz.scp.css

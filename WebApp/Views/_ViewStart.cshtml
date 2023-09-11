@@ -12,10 +12,28 @@
         case "Register":
             clayout = "~/Views/Shared/_LayoutLogin.cshtml";
             break;
+           
         default:
             //Admin layout
             clayout = "~/Views/Shared/_Layout.cshtml";
+            switch (action)
+            {
+                case "Edit":
+                    clayout = "~/Views/Shared/_LayoutChild.cshtml";
+                    break;
+                case "Details":
+                    clayout = "~/Views/Shared/_LayoutChild.cshtml";
+                    break;
+                case "Delete":
+                    clayout = "~/Views/Shared/_LayoutChild.cshtml";
+                    break;
+                default:
+                    //Admin layout
+                    clayout = "~/Views/Shared/_Layout.cshtml";
+                    break;
+            }
             break;
+           
     }
     Layout = clayout;
 

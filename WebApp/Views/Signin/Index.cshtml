@@ -1,4 +1,5 @@
-﻿@{
+﻿@model WebApp.Models.LoginModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -9,30 +10,26 @@
                 <div class="card-body">
                     <h1>Login</h1>
                     <p class="text-medium-emphasis">Sign In to your account</p>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">
-                            <svg class="icon">
-                                <use xlink:href="vendors/coreui/icons/svg/free.svg#cil-user"></use>
-                            </svg>
-                        </span>
-                        <input class="form-control" type="text" placeholder="Username">
-                    </div>
-                    <div class="input-group mb-4">
-                        <span class="input-group-text">
-                            <svg class="icon">
-                                <use xlink:href="vendors/coreui/icons/svg/free.svg#cil-lock-locked"></use>
-                            </svg>
-                        </span>
-                        <input class="form-control" type="password" placeholder="Password">
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <button class="btn btn-primary px-4" type="button">Login</button>
+                    <form asp-controller="SignIn" asp-action="Index" method="POST" onsubmit="btnsubmit.disabled = true; return true;">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <svg class="icon">
+                                    <use xlink:href="vendors/coreui/icons/svg/free.svg#cil-user"></use>
+                                </svg>
+                            </span>
+                            <input class="form-control" type="text" placeholder="Username" asp-for="Email">
                         </div>
-                        <div class="col-6 text-end">
-                            <button class="btn btn-link px-0" type="button">Forgot password?</button>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <svg class="icon">
+                                    <use xlink:href="vendors/coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                                </svg>
+                            </span>
+                            <input class="form-control" type="password" placeholder="Password" asp-for="Password">
                         </div>
-                    </div>
+                        <button class="btn btn-block btn-success" type="submit" value="SignIn" id="btnsubmit">Signin</button>
+                    </form>
                 </div>
             </div>
             <div class="card col-md-5 text-white bg-primary py-5">
@@ -40,7 +37,15 @@
                     <div>
                         <h2>Sign up</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button class="btn btn-lg btn-outline-light mt-3" type="button">Register Now!</button>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="btn btn-lg btn-outline-light mt-3" asp-controller="Register" asp-action="index"><b>Register Now!</b></a>
+                            </div>
+                            <div class="col-6 text-end">
+                                <a class="btn btn-link px-0" asp-controller="demoindarung" asp-action="index"><b>Forget Password</b></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

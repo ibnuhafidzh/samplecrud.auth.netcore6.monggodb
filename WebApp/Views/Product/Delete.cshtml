@@ -1,0 +1,23 @@
+﻿@model WebApp.Models.admin.Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Delete Product</h4>
+                <p class="card-description">Are you sure you want to delete @Html.DisplayFor(model => model.Id)?</p>
+                <form class="forms-sample" asp-action="Delete">
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Name</label>
+                        <label class="form-control">  @Html.DisplayFor(model => model.Name)</label>
+                    </div>
+                    <input type="submit" value="Delete" class="btn btn-danger" /> |
+                    <a asp-action="Index">Back to List</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
