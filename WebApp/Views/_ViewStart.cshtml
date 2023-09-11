@@ -1,3 +1,22 @@
 ﻿@{
-    Layout = "_Layout";
+    var context = ViewContext.HttpContext;
+    var currentUser = context.User.Identity.Name;
+    string controller = context.Request.RouteValues["controller"].ToString();
+    string action = context.Request.RouteValues["action"].ToString();
+    string clayout = "";
+    switch (controller)
+    {
+        case "Signin":
+            clayout = "~/Views/Shared/_LayoutLogin.cshtml";
+            break;
+        case "Register":
+            clayout = "~/Views/Shared/_LayoutLogin.cshtml";
+            break;
+        default:
+            //Admin layout
+            clayout = "~/Views/Shared/_Layout.cshtml";
+            break;
+    }
+    Layout = clayout;
+
 }
