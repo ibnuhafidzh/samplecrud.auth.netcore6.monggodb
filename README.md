@@ -1,40 +1,40 @@
 # samplecrud.auth.netcore6.monggodb
 
+home page it can be access without authorization
 ![](screenshot/home.jpeg)
-home layout it can be access without authorization
 
+login page it can be access without authorization and on this page you can login with user
 ![](screenshot/login.jpeg)
-home layout it can be access without authorization and on this page you can login with user
 
+register page it can be access without authorization and on this page you'r registering or creating new user with default role member
 ![](screenshot/register.jpeg)
-home layout it can be access without authorization and on this page you'r registering or creating new user with default role member
 
+list of product page , you should login first to access this page
 ![](screenshot/listproduct.jpeg)
-list of product layout , you should login first to access this page
 
+edit of product page , you should login first to access this page
 ![](screenshot/editproduct.jpeg)
-edit of product layout , you should login first to access this page
 
+delete spesific of product page , you should login first to access this page
 ![](screenshot/deleteproduct.jpeg)
-delete spesific of product layout , you should login first to access this page
 
+details information of spesific product page , you should login first to access this page
 ![](screenshot/detailproduct.jpeg)
-details information of spesific product layout , you should login first to access this page
 
-![](screenshot/error.png)
 if there error occured like this image bellow, is it because there are no value on connectiong string for fixing it just make sure you fill with your correct connection string and the name of database
+![](screenshot/error.png)
 
-![](screenshot/database.jpeg)
 monggo db preview database
+![](screenshot/database.jpeg)
 
-![](screenshot/tableproductdb.jpeg)
 monggo db table product
+![](screenshot/tableproductdb.jpeg)
 
-![](screenshot/tablesuserdb.jpeg)
 monggo db table user
+![](screenshot/tablesuserdb.jpeg)
 
-![](screenshot/tablerolesdb.jpeg)
 monggo db table role
+![](screenshot/tablerolesdb.jpeg)
 
 this is application developed using visual studio 2022 and combine with .net core 6 as frontend and backend the databases it self using monggo db, and also support docker.
 
